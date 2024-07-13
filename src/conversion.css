@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230, 66, 93);
+}
+.calculator {
+  width: 900px;
+  height: 500px;
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box {
+  width: 500px;
+  background-image: url("assets/meter.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  margin: 10px;
+}
+.data {
+  flex: 1;
+  padding: 15px;
+}
+h1 {
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: orangered;
+}
+.container {
+  margin-bottom: 12px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #888;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  font-size: 20px;
+}
+button {
+  background-color: rgb(230, 66, 93);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  transition: bacckgroung-color 0.3s;
+  margin-left: 12px;
+}
+button:hover {
+  background-color: orangered;
+  cursor: pointer;
+}
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid rgb(230, 66, 93);
+  border-radius: 6px;
+}
+.result p {
+  margin: 10px 0;
+  color: #555;
+}
+.result p:first-child {
+  color: rgb(230, 66, 93);
+  font-weight: bolder;
+}
+.error {
+  text-align: center;
+  color: red;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 931px) {
+  .calculator {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .box {
+    width: 0px;
+    background-image: none;
+  }
+  .data {
+    flex: 0;
+  }
+  .container {
+    width: 100%;
+  }
+  .btn {
+    margin-left: 0;
+  }
+}
